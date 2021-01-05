@@ -3,9 +3,9 @@
 ### This is a module for [AzerothCore](http://www.azerothcore.org)
 - Latest build status with azerothcore: [![Build Status](https://github.com/azerothcore/mod-guild-zone-system/workflows/core-build/badge.svg?branch=master&event=push)](https://github.com/azerothcore/mod-guild-zone-system)
 
-### Features:
-- Allows Guild Masters to Purchase/Sell Zones.
-- Once purchased, Guild Masters and Guild members can port to your designated Guild House location set for that Zone.
+### 特征:
+- 允许公会大师购买/出售区域。
+- 购买后，公会大师和公会成员可以移植到您为该区域设置的指定公会房屋位置。
 
 
 ### This module currently requires:
@@ -18,15 +18,15 @@
 3. Navigate to `modules`, apply the SQL files in the correct databases.
 
 
-### Usage
+### 用法
 - Spawn NPC ID 55005 `.npc a 55005`
-- Create a guild `.guild create MyCharacter "MyGuild"`
-- Talk to the NPC
+- 创建一个公会 `.guild create MyCharacter "MyGuild"`
+- 和NPC对话
 
 
-### Uninstall
+### 卸载
 
-To remove the SQL, use these queries in the `world` database:
+要删除SQL，请在world数据库中使用以下查询
 ```SQL
 -- The example of the creature --
 DELETE FROM `creature_template` WHERE entry=55005;
